@@ -1,0 +1,693 @@
+
+   
+    * {
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    .shift {
+        padding: 1em 1em 1em 1em;
+    }
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-pad {
+        padding: 1em 0em;
+    }
+
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    h5 {
+        color: #E2B540;
+    }
+
+    a {
+        /* padding-right: 1em; */
+        font-size: medium;
+        /* font-weight: bold; */
+        /* color: #ffffff; */
+    }
+
+    .card p a {
+        color: #E2B540;
+        text-align: center;
+    }
+
+    .card p a:hover {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #E2B540;
+        text-decoration: none;
+        transition: ease-in-out;
+        transition-delay: .2s;
+    }
+
+    a.active {
+        color: #E2B540;
+    }
+
+    ol li.active {
+        background-color: #E2B540;
+    }
+
+    h3 {
+        /* padding-left: 1.5em; */
+        color: #E2B540;
+        text-align: center;
+    }
+
+
+
+    /* ------------------------------------------------------------------------------------------ */
+
+
+    /* Navigation Bar */
+    img.logo {
+        width: 15em;
+        height: 6em;
+    } 
+
+    nav {
+        padding:5em 1em 4em 50em;
+        background: #000000;
+    }
+
+    ul li.nav-item a{
+        padding-left: 2em;
+        color: #ffffff;
+    }
+
+    ul li.nav-item a:hover{
+        padding-left: 2em;
+        color: #E2B540;
+    }
+
+    ul li.nav-item a.active{
+        padding-left: 2em;
+        color: #E2B540;
+    }
+
+    ul li.nav-item p{
+        padding-left: 2em;
+        color: #ffffff;
+    }
+
+    div.right {
+        margin-left: auto;
+        direction: rtl;
+    }
+
+    .dropdown-item {
+        background-color: #fefefe;
+    }
+
+    div.dropdown-menu a {
+        color: #000000;
+    }
+
+
+    .header1 {
+        height: 450px;
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        color: white;
+        overflow: hidden;
+        /* background: #C04848; */
+        /* fallback for old browsers */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header1_image {
+        /* position: relative; */
+        background: linear-gradient(rgba(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Mines ops.jpg");
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Mines ops.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 80vh;
+        /* Center the image horizontally and vertically */
+    }
+
+    .header2_image {
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Environment.jpg");
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("/..images/Services/Environment.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 80vh;
+        /* Center the image horizontally and vertically */
+    }
+
+    .header3_image {
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Exploration program design.jpg");
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Exploration program design.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 80vh;
+        /* Center the image horizontally and vertically */
+    }
+
+    .header4_image {
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("../images/Services/Mines operation (2).jpg");
+        background: linear-gradient(rgb(26, 24, 26, 0.45464), rgba(49, 45, 45, 0.45464)), url("/..images/Services/Mines operation (2).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 80vh;
+        /* Center the image horizontally and vertically */
+    }
+
+    /* ------------------------------------------------------------------------------------------ */
+
+    h4 {
+        /* padding: 2em; */
+        text-align: center;
+        color: #E2B540;
+
+    } 
+
+    .welcome_card_image {
+        height: 250px;
+    }
+
+
+    section p {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+        color: #E2B540;
+        font-size: large;
+    }
+
+    section h3 {
+        color: #ffffff;
+        position: absolute;
+        bottom: 250px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    
+
+
+    .dive-button {
+        border: none;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .prev {
+        color: black;
+    }
+
+
+    /* Welcome */
+
+    .welcome {
+        display: flex;
+        padding: 5em 0em;
+    }
+
+    .WelPic img {
+        /* width: 550px;
+        height: 600px; */
+        /* padding-bottom: 1em; */
+    }
+
+    .bgc {
+        padding-bottom: 1em;
+        padding-right: 1em;
+        background: #E2B540;
+    }
+
+    .side-by-side {
+        width: 50%; 
+        box-sizing: border-box; 
+        margin: 0 30px;
+    }
+
+    div p.WelText {
+        text-align: justify;
+    }
+
+    .WelHead h2 {
+        font-size: 2.5em;
+    }
+
+    .WelHead span {
+        color: #E2B540;
+    }
+
+    p.tickyellow {
+        border: 2px solid #E2B540;
+        width: 6em;
+    }
+
+    p.tickblack {
+        border: 2px solid #000000;
+        width: 10%;
+    }
+
+
+    /* Our Service */
+    .service {
+        background-color: rgb(206, 205, 201);
+        padding: 3em 0em;  
+    }
+
+    .containers {
+        max-width: 1200px;
+        /* Add your desired max-width */
+        margin: 0 auto;
+    }
+
+
+
+
+
+    /* Project */
+
+    .project {
+        padding-top: 5em;
+        padding-bottom: 8em;
+    }
+
+    button {
+        background: #00000000;
+    }
+
+    /* post and news */
+    .card-body p a {
+        text-align: center;
+    }
+
+    .pcenter {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* pertners */
+    .pertners {
+        padding: 5em;
+    }
+
+    div.partner-card img {
+        width: 10em;
+        height: 5em;
+        padding-left: 1em;
+    }
+
+    /* footer */
+    .all {
+        padding: 3em;
+    }
+
+    .logo-text {
+        color: #ffffff;
+        padding-top: 1em;
+        text-align: justify;
+    }
+
+    .socialLink a i {
+        border: 1px solid #E2B540;
+        padding: 1em;
+        border-radius: 50%;
+        background: #ffffff;
+        margin-right: 1em;
+        font-size: 1em;
+        color: #000000;
+    }
+
+    .socialLink a i:hover {
+        background: #000000b6;
+        color: #E2B540;
+        transition: ease-in;
+        animation-delay: 3;
+    }
+
+    /* second column */
+    .middle {
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sitemap ul li i{
+        color: #E2B540;
+        padding-right: 1em;
+    }
+
+    .sitemap ul li {
+        padding-bottom: .5em;
+    }
+
+    .sitemap ul li a {
+        color: #ffffff;
+    }
+
+    .sitemap ul li a:hover {
+        color: #E2B540;
+    }
+
+    .address i, .contact i {
+        color: #E2B540;
+        font-size: 25px;
+    }
+
+    div.address p, div.address span {
+        text-align: justify;
+        color: #ffffff;
+    }
+
+    .last {
+        background-color: #000000;
+    }
+
+
+    /* Special transition */
+
+    .img {
+        width: 100%;
+        height: auto;
+        opacity: .9;
+        transform: scale(1);
+        transition: transform .6s ease-in;
+    }
+    
+    .img:hover {
+        opacity: 1;
+        transform: scale(1.01);
+        transition: .6s ease-in;
+    }
+
+    .collapsed {
+        background: #e2b440;
+        border: none;
+        color: #E2B540;
+        /* background: #ffffff; */
+    }
+
+    .collapsed:hover {
+        background: #ffffff;
+        border: none;
+        /* background: #ffffff; */
+    }
+
+
+
+
+    /* @media screen here */
+
+    /* Styles for big screens (min-width: 768px) */
+    @media screen and (min-width: 768px) {
+        .sitemap {
+            padding-left: 25%;
+        }
+
+        .WelPic img {
+            width: 550px;
+            height: 600px;
+            /* padding-bottom: 1em; */
+        }
+    }
+
+    /* Styles for small screens (max-width: 767px) */
+    @media screen and (max-width: 767px) {
+        div.right ul:first-child {
+            display: none;
+        }
+
+        .middle {
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+
+        div.right ul:last-child {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        
+        div.right ul:last-child li {
+            padding-bottom: 1em;
+            /* or use flex-direction: column; and set order property */
+        }
+
+        .this {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .partner-card {
+            padding-bottom:2em;
+        }
+
+        .lst {
+            padding-top: 2em;
+            /* background-color: #000000; */
+        }
+
+        section p {
+            display: none;
+        }
+
+        section h3 {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            text-align: center;
+            /* color: #E2B540; */
+            /* font-size: large; */
+        }
+    }
+
+
+    /* Map */
+    /* Set the map container size */
+    #map {
+        height: 400px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+
+    .form {
+        background: #c8c8c8c6;
+    }
+
+    .subtom {
+        background-color: #E2B540;
+        border: none;
+    }
+
+    .subtom:hover {
+        background-color: #e2b440a2;
+        border: none;
+    }
+
+   .overlay {
+    background-color: #000000;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image Slider */
+
+    .slider {
+        /* background-color: aqua; */
+        height: 200px;
+        /* margin: auto; */
+        /* width: 90%; */
+        position: relative;
+        display: grid;
+        place-items: center;
+        overflow-y: hidden;
+    }
+    
+    .slide-track {
+        display: flex;
+        width: calc(250px * 18);
+        animation: scroll 400s linear infinite;
+    }
+    
+    .slide-track:hover {
+        animation-play-state:paused;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+    
+    .slide1 {
+        background-image: url("images/Services/Environment.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .slide2 {
+        background-image: url("images/Services/Geology.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    .slide3 {
+        background-image: url("images/Services/Feasibilty.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    .slide4 {
+        background-image: url("images/Services/Mine-design-and-planning.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    .slide5 {
+        background-image: url("images/Services/Background Float.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    .slide6 {
+        background-image: url("images/Services/QA_QC.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    .slide7 {
+        background-image: url("images/Services/Exploration program.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+    
+    .over a {
+        font-size: larger;
+        color: #ffffff;
+        padding-top: 4em;
+    }
+
+    .over a:hover {
+        color: #E2B540;
+    }
+    
+    .over {
+        /* display: none; */
+        background-color: #000000b5;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        text-align: center;
+        padding-top: 50%;
+    }
+    
+    .over:hover {
+        /* display: block; */
+        opacity: 1;
+        transition: all .5s ease-in;
+    }
+    
+    .slides {
+        background-color: #000000;
+        margin: 5px;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        perspective: 100px;
+    }
+    
+    img {
+        transition: transform 1s;
+        width: 100%;
+    }
+    
+    img:hover, .slide1:hover {
+        transform: translateZ(20px);
+    }
+    
+    /* Gradient Shadow */
+    
+    .slider::before,
+    .slider::after {
+        background-color: linear-gradient(to right, rgb(255, 255, 255, 1) 0%,
+         rgb(255, 255, 255, 0) 100%);
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 15px;
+        z-index: 2;
+    }
+    
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+    
+    .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotate(180deg);
+    }
