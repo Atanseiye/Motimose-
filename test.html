@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Active Links</title>
+    <style>
+        /* Style to highlight active link */
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navbar-nav mr-auto" id="menu">
+        <li class="nav-item">
+            <a class="nav-links" aria-current="page" href="contact.php" onclick="switchLink(1)">CONTACT US</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-links" href="projects.php" tabindex="-1" aria-disabled="true" onclick="switchLink(2)">PROJECTS</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true" onclick="switchLink(3)">SERVICES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-links" href="about.php" tabindex="-1" aria-disabled="true" onclick="switchLink(4)">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-links active" href="home.php" tabindex="-1" aria-disabled="true" onclick="switchLink(5)">HOME</a>
+        </li>
+    </ul>
+
+    <script>
+        function switchLink(linkNumber) {
+            // Remove 'active' class from all links
+            var links = document.querySelectorAll('#menu a');
+            links.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked link
+            var activeLink = document.querySelector('#menu li:nth-child(' + linkNumber + ') a');
+            activeLink.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <!-- Include Bootstrap CSS from the CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/stlye.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- External Javascript -->
+    <script src="script.js"></script>
+
+    <!-- Add your Google Maps API key here -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwAogaUPuzdmI7htyJDCyYYgLC7P_EnmQ&callback=initMap"
+        async defer></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+        <div class="container">
+            <a href="home.php"><img src="images/Motimose Logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse shift-right" id="navbarSupportedContent">
+
+
+                <div class="right" id="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-links" aria-current="page" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-links" href="#" tabindex="-1" aria-disabled="true">|</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="blog and news.php" tabindex="-1" aria-disabled="true">BLOG</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <p class="nav-links" href="#" tabindex="-1" aria-disabled="true">|</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true">OUR PROJECT</a>
+                        </li> -->
+                    </ul>
+                    <!-- </span> -->
+
+
+
+                    <!-- <div> -->
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-links" aria-current="page" href="contact.php" onclick="switchLink(1)">CONTACT
+                                US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-links" href="projects.php" tabindex="-1" aria-disabled="true"
+                                onclick="switchLink(2)">PROJECTS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true"
+                                onclick="switchLink(3)">SERVICES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-links dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ABOUT</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Our Story</a>
+                                <a class="dropdown-item" href="#">Team</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="#">Awards and Recognition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links active" href="home.php" tabindex="-1" aria-disabled="true"
+                                onclick="switchLink(5)">HOME</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Navigation bar -->
+
+
+
+
+</body>
+
+
+<!-- Carousel with overlay -->
+<div id="carouselExampleIndicators" class="carousel slide carousel-size" data-ride="carousel">
+
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <section class='header1 header1_image'>
+                <h3>Evaluate | Design | Execute</h3>
+                <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos
+                    inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+
+                </p>
+                <!-- <a href="#">More</a> -->
+            </section>
+        </div>
+        <div class="carousel-item">
+            <section class='header1 header2_image'>
+                <h3>Evaluate | Design | Execute</h3>
+                <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos
+                    inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+
+                </p>
+                <!-- <a href="#">More</a> -->
+            </section>
+        </div>
+        <div class="carousel-item">
+            <section class='header1 header3_image'>
+                <h3>Evaluate | Design | Execute</h3>
+                <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos
+                    inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+
+                </p>
+                <!-- <a href="#">More</a> -->
+            </section>
+        </div>
+        <div class="carousel-item active">
+            <section class='header1 header4_image'>
+                <h3>Evaluate | Design | Execute</h3>
+                <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos
+                    inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto quos inventore enim,
+                    perferendis laboriosam maiores ab natus deleniti eveniet voluptas explicabo possimus aspernatur
+                    voluptatem! Nobis minima earum soluta provident.
+
+                </p>
+                <!-- <a href="#">More</a> -->
+            </section>
+        </div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+<!-- Welcome to our company  -->
+<div class="welcome container">
+
+    <div class="row container">
+        <div class="col-md-6">
+
+            <div class="WelHead ">
+                <h2>Welcome to <br> <span>Motimosé Metals</span></h2>
+                <p class="tickyellow"></p>
+                <p class="WelText">
+                    Motimosé Metals is a multi-disciplinary geo-mining company with an eclectic mix of vastly
+                    experienced Qualified
+                    Professionals that has been structured to provide detailed and comprehensive mining industry
+                    expertise based on
+                    a cumulative of 300 years’ experience and skill to the develop mining assets through their various
+                    stages of
+                    development.
+                </p>
+
+                <p>
+                    Combining frontline technical knowhow and practical experience to ensure that mining projects across
+                    various mineral
+                    ores progress from pre-exploration to production with a focus on creating and delivering value to
+                    our clients. <br>
+                </p>
+
+                <p>
+                    At Motimosé, all our products and services are designed specifically to suit the client, mineral,
+                    location, and project
+                    peculiarities in line with global best practice on the environment and health, safety and security.
+                    <br>
+                </p>
+
+                <p>
+                    We are able to employ the in-house geoscientists, production engineers & project finance teams
+                    experience to provide full
+                    spectrum analysis to tackle a range of project complexities from small and simple asset
+                    reconnaissance work to large
+                    multi-mineral production and processing facilities across planning, design and implementation, to
+                    final interpretation,
+                    reporting and analysis.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="WelPic">
+                <div class="bgc">
+                    <img src="CSS/images/Services/Mines operation (2).jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+<!-- End of Introduction -->
+
+
+
+<!-- Our Service -->
+<div class="service">
+    <div class="container">
+
+        <div class="WelHead">
+            <h2>Our <span>Services</span></h2>
+            <p class="tickblack"></p>
+            <p class="">
+                Our team of geological experts work on behalf of clients, independently or alongside client geologists
+                to complete the fieldwork
+                and advance the project through the various exploration stages.
+            </p>
+        </div>
+
+        <div class="card-deck service-container row">
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<!-- Our Project -->
+<div class="project container">
+
+    <div class="WelHead">
+        <h2>Our <span>Projects</span></h2>
+        <p class="tickyellow"></p>
+        <p class="">
+            Our team of geological experts work on behalf of clients, independently or alongside client geologists to
+            complete the fieldwork
+            and advance the project through the various exploration stages.
+        </p>
+    </div>
+
+    <div class="slider">
+        <div class="slide-track">
+
+            <!-- 7 slides images -->
+
+            <div class="slide1 slides">
+                <div class="over">
+                    <a href="#" class="hear">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide2 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide3 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide4 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide5 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide6 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide7 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <!-- Same 7 slides images - Doubled -->
+
+            <div class="slide1 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide2 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide3 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide4 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide5 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide6 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="slide7 slides">
+                <div class="over">
+                    <a href="#">View<ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+<!-- Our Project ends -->
+
+
+
+
+<!-- Recent Post and News -->
+<div class="service">
+    <div class="container">
+
+        <div class="WelHead">
+            <h2>Recent <span>Post &amp; News</span></h2>
+            <p class="tickblack"></p>
+            <p class="">
+                Our team of geological experts work on behalf of clients, independently or alongside client geologists
+                to complete the fieldwork
+                and advance the project through the various exploration stages.
+            </p>
+        </div>
+
+        <div class="card-deck service-container row">
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <p class="pcenter"><a href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <p class="pcenter"><a href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 img">
+                <div class="card">
+                    <img class="card-img-top welcome_card_image" src="images/Services/Background Float.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Advisory Corporate</h5>
+                        <p class="tickyellow"></p>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                        <p class="pcenter"><a href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<!-- Our Partners -->
+<div class="pertners">
+    <div class="container">
+
+        <div class="WelHead">
+            <h2>Our <span>Partners</span></h2>
+            <p class="tickblack"></p>
+            <p class="">
+                Our team of geological experts work on behalf of clients, independently or alongside client geologists
+                to complete the fieldwork
+                and advance the project through the various exploration stages.
+            </p>
+        </div>
+
+        <div class="card-deck service-container this row">
+            <div class="partner-card">
+                <!-- <img class="card-img-top welcome_card_image" src="images/Alliance/cardinal.png" alt="Card image cap"> -->
+
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/mmsd.png" alt="Card image cap">
+
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/Novo pro.jpeg" alt="Card image cap">
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/Junction Mining.jpeg"
+                    alt="Card image cap">
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/MTSG.jpeg" alt="Card image cap">
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/Sem Logging.jpeg"
+                    alt="Card image cap">
+            </div>
+
+            <div class="partner-card">
+                <img class="card-img-top welcome_card_image" src="images/Alliance/Wishbone.jpg" alt="Card image cap">
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark all">
+
+    <div class="container">
+        <div class="card-deck  service-container row">
+            <div class="col-md-4 mb-4">
+                <a href="#"><img class="logo" src="images/Motimose Logo.png" alt="Card image cap"></a>
+                <div class="logo-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit quas ad porro quod quos,
+                        explicabo saepe
+                        magnam officiis. Atque consequuntur porro explicabo natus architecto ducimus qui aut! Modi,
+                        eaque!
+                    </p>
+                </div>
+
+                <div class="mt-4 socialLink">
+
+                    <!-- Replace "fab fa-facebook", "fab fa-twitter", etc., with the desired Font Awesome classes -->
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <!-- Add more icons as needed -->
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4 middle">
+                <div class="">
+                    <h3>SiteMap</h3>
+                </div>
+                <div class="sitemap">
+
+                    <ul>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="blog and news.php">Blog</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="partner.php">Partners</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i> <a href="projects.php">Projects</a>
+                        </li>
+                        <!-- <li>
+                            <i class="fas fa-chevron-right"></i> <a href="#">Our Project</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 address">
+
+                <span><i class="fas fa-map-marker-alt"></i> 3 Hatamat Str., P.O. Box 35, 2069201,</span>
+                <p>Yoqneam littl,</p>
+                <p>info@motimose.com</p>
+                <p>+1 800 123 456</p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="last">
+    <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+        <div class="container">
+
+            <div class="collapse navbar-collapse shift-right" id="navbarSupportedContent">
+
+
+                <div class="" id="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-links" aria-current="page" href="#">Terms and Condition</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-links" href="#" tabindex="-1" aria-disabled="true">|</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true">License and Agreement</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-links" href="#" tabindex="-1" aria-disabled="true">|</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true">Privacy Policcy</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-links" href="#" tabindex="-1" aria-disabled="true">|</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#" tabindex="-1" aria-disabled="true">Disclaimer</a>
+                        </li>
+                    </ul>
+                    <!-- </span> -->
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</div>
+<!-- Footer Ends -->
+
+
+
+
+
+<!-- Include Bootstrap JavaScript and jQuery from the CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+    // JavaScript to make the navigation bar sticky on scroll
+    window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.pageYOffset > 0) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    });
+
+
+</script>
+</body>
+
+</html>
